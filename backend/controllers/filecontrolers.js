@@ -28,7 +28,7 @@ module.exports.getFiles = async (req, res) => {
           isDirectory: stats.isDirectory(),
           previewUrl: `${req.protocol}://${req.get(
             "host"
-          )}/file/preview/${file}`,
+          )}/api/file/preview/${file}`,
         };
       })
     );
